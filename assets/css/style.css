@@ -1,0 +1,239 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    width: 120px;
+    margin: 5 10px;
+    cursor: pointer;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(55, 56, 56);
+    z-index: 100;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    padding: 20px 0;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbarbtns {
+    gap: 20px;  
+    list-style: none;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+/* Homepage CSS Code */
+
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(assets/img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.75);
+} 
+
+.homepage .content {
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage .text {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.homepage a {
+    color: black;
+    text-decoration: none;
+    background: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.homepage a:hover {
+    color: white;
+    background: rgb(34, 214, 214);
+}
+
+/* Daydream Stuff Code */
+section {
+    padding-top: 80px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section .cards {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .card {
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+    list-style: none;
+    background-color: white;
+    padding: 40px 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section .card img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+section .card p {
+    margin-top: 5px;
+}
+
+/* Daydream App Portfolio */
+.portfolio .card {
+    padding: 0 0 20px;
+}
+
+.portfolio .card img {
+    height: 240px;
+    width: 100%;
+    border-radius: 0px 0px 0 0;
+}
+
+.portfolio a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    padding: 3px;
+    box-shadow: none;
+    font-size: 13px;
+    transition: 0.3s;
+    padding-top: 3px;
+}
+
+.portfolio a:hover {
+    color: white;
+    background: rgb(34, 214, 214);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    padding: 20px 0;
+}
+
+.footer span {
+    color: white;
+}
+
+#menu-toggle, #hamburger-menu {
+    display: none;
+}
+
+/* Responsive Style Code */
+@media (width < 860px) {
+    .navbar .navbarbtns {
+        position: fixed;
+        top: 65px;
+        left: 0;
+        height: 100%;
+        display: block;
+        background: #373838;
+        width: 300px;
+        padding-left: 20px;
+        padding-top: 30px;
+        left: -100%;
+        transition: all 0.3s ease;
+    }
+
+    #menu-toggle:checked ~ .navbarbtns {
+        left: 0;
+    }
+    
+    .navbarbtns li {
+        font-size: 18px;
+    }
+    
+    #hamburger-menu {
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    section .cards .card {
+        width: calc(100% / 2 -15px);
+    }
+}
+
+@media (width < 560px) {
+    section .cards .card {
+        width: 100%;
+    }
+    .homepage .text h1 {
+        font-size: 30px;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
