@@ -34,7 +34,7 @@ Taken from https://www.androidauthority.com/google-daydream-ready-phones-705245/
 
 There is a project called "NightGaunt" which the creator [BridgeBrain](https://github.com/bridgebrain) makes to rebuild the entire Daydream OS using the Lenovo Mirage Solo Kernel Source Code [Download Kernel Source Code](https://smartsupport.lenovo.com/uu/en/products/smart/arvr/mirage-solo/downloads/ds503129)
 
-[NightGaunt Project Files](https://drive.google.com/drive/folders/1lF8mqtnHkHg-Qsv8WGT0mZyMwojDjS_O)
+If you want to explore the Project Files you can go to this link -----> [NightGaunt Project Files](https://drive.google.com/drive/folders/1lF8mqtnHkHg-Qsv8WGT0mZyMwojDjS_O)
 
 If you want to add Root Access to your Mirage Solo, you need to use this file
 [Rooted Pre-patched boot.img](https://github.com/Nargajuna/NightGaunt/blob/master/boot-patched%5B200108%5D.img)
