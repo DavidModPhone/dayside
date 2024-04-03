@@ -39,3 +39,6 @@ If you want to explore the Project Files you can go to this link -----> [NightGa
 If you want to add Root Access to your Mirage Solo, you need to use this file
 [Rooted Pre-patched boot.img](https://github.com/Nargajuna/NightGaunt/blob/master/boot-patched%5B200108%5D.img)
 
+# New Pages
+
+If you want to add more pages to the website, use the template ------> [Pull Request Template](https://github.com/DavidModPhone/dayside/blob/main/docs/pull_request_template.md)
