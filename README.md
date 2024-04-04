@@ -16,7 +16,7 @@ Phone Requirements to use the Daydream VR Enviorment:
 * Sustained Perfomance Mode
 * Vulkan Hardware Level 0 and SHOULD support Vulkan Hardware Level 1.
 * H.264 Decoding at least 3840 x 2160 (4K) @ 30FPS-40MBps
-* HEVC and VP9 Support at least 1,920 x 1,080 @ 30 fps-10Mbps, and SHOULD be    capable of decoding 3,840 x 2,160 @ 30fps-20Mbps (equivalent to 4 instances of 1,920 x 1,080 @ 30fps-5Mbps).
+* HEVC and VP9 Support at least 1,920 x 1,080 @ 30 fps-10Mbps, and SHOULD be capable of decoding 3,840 x 2,160 @ 30fps-20Mbps (equivalent to 4 instances of 1,920 x 1,080 @ 30fps-5Mbps).
 * Gyroscope
 * Accelerometer
 * Compass
