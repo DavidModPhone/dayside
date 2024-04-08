@@ -8,7 +8,7 @@ This is a fan-led effort to preserve and provide access to historical artifacts 
 
 # Phone Requirements
 
-The Recommended Android Version for the Daydream VR Enviorment is: Android 10
+The Recommended Android Version for the Daydream VR Enviorment is: Android 9.0 Pie
 
 Phone Requirements to use the Daydream VR Enviorment:
 
@@ -29,6 +29,8 @@ Phone Requirements to use the Daydream VR Enviorment:
 * Android 7 Nougat or later
 
 Taken from https://www.androidauthority.com/google-daydream-ready-phones-705245/
+
+The Nexus 6P Is considered as a development device for Daydream Apps but there is still ways to get the app working on the Nexus
 
 # Extras
 
