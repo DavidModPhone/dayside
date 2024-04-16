@@ -170,11 +170,34 @@ section .card p {
     font-size: 13px;
     transition: 0.3s;
     padding-top: 3px;
+    border-radius: 5px;
 }
 
 .portfolio a:hover {
     color: white;
     background: rgb(34, 214, 214);
+}
+
+/* Daydream QR Code */
+.portfolioqr .card {
+    padding: 0 0 20px;
+}
+
+.portfolioqr .card img {
+    height: 240px;
+    width: auto;
+    border-radius: 0px 0px 0 0;
+}
+
+.portfolioqr a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    padding: 3px;
+    box-shadow: none;
+    font-size: 13px;
+    transition: 0.3s;
+    padding-top: 3px;
 }
 
 /* Footer */
