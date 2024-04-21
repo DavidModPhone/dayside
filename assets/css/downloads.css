@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.logo {
+    width: 120px;
+    margin: 5 10px;
+    cursor: pointer;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+    background: #f2f2f2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(55, 56, 56);
+    z-index: 100;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    padding: 20px 0;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbarbtns {
+    gap: 20px;  
+    list-style: none;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+
+/* Download Page Style Code */
+.downloads {
+    padding-top: 80px;
+}
+
+.section-title {
+    text-align: center;
+    padding: 15px;
+}
+
+.download-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.download-item {
+    width: calc(20% - 20px); /* 20% width with some margin */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.download-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.download-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.download-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.download-item a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-item a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    padding: 20px 0;
+}
+
+.footer span {
+    color: white;
+}
+
+#menu-toggle, #hamburger-menu {
+    display: none;
+}
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+
+/* Responsive Style Code */
+@media (width < 860px) {
+    .navbar .navbarbtns {
+        position: fixed;
+        top: 65px;
+        left: 0;
+        height: 100%;
+        display: block;
+        background: #373838;
+        width: 300px;
+        padding-left: 20px;
+        padding-top: 30px;
+        left: -100%;
+        transition: all 0.3s ease;
+    }
+
+    .portfolio .card img {
+        height: auto;
+        width: 100%;
+        border-radius: 0px 0px 0 0;
+    }    
+
+    #menu-toggle:checked ~ .navbarbtns {
+        left: 0;
+    }
+    
+    .navbarbtns li {
+        font-size: 18px;
+    }
+    
+    #hamburger-menu {
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    section .cards .card {
+        width: calc(100% / 2 -15px);
+    }
+}
+
+@media (width < 560px) {
+    section .cards .card {
+        width: 100%;
+    }
+    .homepage .text h1 {
+        font-size: 30px;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .download-item {
+        width: calc(50% - 20px); /* Two items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .download-item {
+        width: calc(100% - 20px); /* One item per row */
+    }
+}
+
+@media (max-width: 1200px) {
+    .download-item {
+        width: calc(25% - 20px); /* Four items per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .download-item {
+        width: calc(33.33% - 20px); /* Three items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .download-item {
+        width: calc(50% - 20px); /* Two items per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .download-item {
+        width: calc(100% - 20px); /* One item per row */
+    }
+}

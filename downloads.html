@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/downloads.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <title>Dayside</title>
+</head>
+
+<body>
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!--Navbar-->
+    <header>
+        <nav class="navbar container flex">
+            <a href="index.html"><img class="logo" src="assets/img/dsidelogo.png"></a>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" id="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="navbarbtns flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Download Page Code-->
+    <main class="container">
+        <section class="downloads">
+            <h1 class="section-title">Daydream Downloads</h1>
+            <div class="download-links">
+                <div class="download-item">
+                    <img src="assets/img/appgamesimg/gplaymovies.png" alt="">
+                    <h2>Google Play Movies VR</h2>
+                    <p>Google Play Movies VR is an app which it allows you to watch Movies in VR</p>
+                    <a href="assets/files/apks/playmoviesdaydream.apk">Download The App</a>
+                    <p>You dont need an OBB File</p>
+                </div>
+                <div class="download-item">
+                    <img src="assets/img/appgamesimg/vvr.png" alt="">
+                    <h2>Virtual Virtual Reality</h2>
+                    <p>Virtual Virtual Reality is a game where you can experience VR in VR as the name of the game
+                        suggets
+                    </p>
+                    <a href="assets/files/apks/vvr.apk">Download The Game</a>
+                    <p>You need an OBB File</p>
+                    <a href="assets/files/apks/obbs/com.TenderClaws.VVR.zip">Download The OBB File</a>
+                </div>
+                <div class="download-item">
+                    <img src="assets/img/appgamesimg/skyboxvr.png" alt="">
+                    <h2>Skybox VR Player</h2>
+                    <p>An app to watch your local or network videos in VR</p>
+                    <a href="assets/files/apks/SkyboxVR.apk">Download The App</a>
+                    <p>You need an OBB File</p>
+                    <a href="assets/files/apks/obbs/xyz.skybox.player.zip">Download The OBB File</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; DavidModPhone 2024, Google Daydream is the trademark of Google Inc. No Copyright Infringement
+                intended nor commercial intended</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({ 'overflow': 'visible' });
+        })
+        //]]>
+
+        document.body.classList.remove('no-scroll');
+        (function () {
+            function onReady() {
+                document.body.classList.remove('no-scroll');
+            }
+
+            if (document.readyState === 'complete') {
+                onReady();
+            } else {
+                document.addEventListener('DOMContentLoaded', onReady);
+            }
+        })();
+    </script>
+</body>
+
+</html>

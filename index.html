@@ -9,6 +9,10 @@
     <title>Dayside</title>
 </head>
 <body>
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
     <!--Navbar-->
     <header>
         <nav class="navbar container flex">
@@ -20,8 +24,8 @@
             </label>
 
             <ul class="navbarbtns flex">
-                
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +50,7 @@
                 <li class="card">
                     <img src="assets/img/cardimgs/daydreamvrheadset.jpg" alt="dheadset">
                     <h3>Their VR Headsets are cheap and affordable</h3>
-                    <p>The Daydream VR Headset is very very cheap to buy. you simply put your supported or unsupported phone(if you have root and installed the Magisk Module "<a href="https://github.com/DavidModPhone/DaydreamVR_Service">Daydream VR Service</a>") on the headset</p>
+                    <p>The Daydream VR Headset is very very cheap to buy. you simply put your supported (or unsupported phone if you have root and installed the Magisk Module "<a href="https://github.com/DavidModPhone/DaydreamVR_Service">Daydream VR Service</a> installed on the unsupported phone) on the headset</p>
                 </li>
                 <li class="card">
                     <img src="assets/img/cardimgs/lenovomiragesolo.jpg" alt="lenovoheadset">
@@ -80,6 +84,7 @@
                     <img src="assets/img/cardimgs/daydream.png" alt="">
                     <h3>Daydream Controller Emulator App</h3>
                     <p>If you don't own a Daydream controller, or you lost it, you can use this app on another device to emulate a Daydream controller.</p>
+                    <p>You need a phone with a gyroscope!</p>
                     <a href="assets/files/DaydreamVRAPK/daydream_controller_emulator.apk">Download The Daydream Controller Emulator App</a>
                 </li>
 
@@ -125,4 +130,27 @@
     </section>
 </body>
 <script src="assets/js/all.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+
+    document.body.classList.remove('no-scroll');
+            (function () {
+                function onReady() {
+                    document.body.classList.remove('no-scroll');
+                }
+
+                if (document.readyState === 'complete') {
+                    onReady();
+                } else {
+                    document.addEventListener('DOMContentLoaded', onReady);
+                }
+            })();
+</script>
 </html>

@@ -6,12 +6,16 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
 .logo {
     width: 120px;
     margin: 5 10px;
     cursor: pointer;
 }
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 body {
     background: #f2f2f2;
@@ -214,6 +218,41 @@ section .card p {
     display: none;
 }
 
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+.no-scroll {
+    overflow: hidden;
+ }
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(status.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
+}
+
+
 /* Responsive Style Code */
 @media (width < 860px) {
     .navbar .navbarbtns {
@@ -229,6 +268,12 @@ section .card p {
         left: -100%;
         transition: all 0.3s ease;
     }
+
+    .portfolio .card img {
+        height: auto;
+        width: 100%;
+        border-radius: 0px 0px 0 0;
+    }    
 
     #menu-toggle:checked ~ .navbarbtns {
         left: 0;
