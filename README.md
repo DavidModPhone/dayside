@@ -4,8 +4,6 @@ Dayside is a new website to download Google Daydream Stuff that has been discont
 
 The Google Daydream VR Products was discontinued on October 15 of 2019 and the VR Envoriment was discontinued on Android 11 (8 September 2020)
 
-This is a fan-led effort to preserve and provide access to historical artifacts related to the VR platform, We also provide old apps and games including their obb data file and the Daydream SDK to keep this short-lived VR Enviorment alive!. This project has no commercial intent or aspiration, and all historical materials are subject to fair use provisions of US copyright law, as the project serves the public interest in preservation, access and research. Additionally, since the Google Daydream VR platform has been obsolete since 2019, this work is exempted from the DMCA per a 2006 ruling by the U.S. Copyright office.
-
 # Phone Requirements
 
 The Recommended Android Version for the Daydream VR Enviorment is: Android 9.0 Pie
